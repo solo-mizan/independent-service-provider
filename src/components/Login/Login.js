@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
@@ -8,6 +8,7 @@ import auth from '../../firebase.init';
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
     const [
         signInWithEmailAndPassword,
@@ -23,12 +24,14 @@ const Login = () => {
         setPassword(event.target.value);
     }
 
-
     const handleUserSignIn = (event) => {
         event.preventDefault();
         signInWithEmailAndPassword(email, password);
     }
 
+    if (user) {
+        navigate('/about');
+    }
     return (
         <div className='w-75 mx-auto border border-2 p-3 rounded-2'>
             <h2 className='text-danger text-center mt-3'>Please Login</h2>

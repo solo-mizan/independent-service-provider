@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Register.css';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 
 const Register = () => {
@@ -9,6 +9,8 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [err, setErr] = useState('');
     const navigate = useNavigate();
+
+    const [sendEmailVerification, sending] = useSendEmailVerification(auth);
 
     const [
         createUserWithEmailAndPassword,
@@ -57,6 +59,14 @@ const Register = () => {
                 <p className="forgot-password text-right">
                     Already registerd? <Link className='text-decoration-none text-success' to={'/login'}>Login here</Link>
                 </p>
+                <button
+                    onClick={async () => {
+                        await sendEmailVerification();
+                        alert('Email verification sent');
+                    }}
+                >
+                    Verify email
+                </button>
             </form>
             );
         </div>

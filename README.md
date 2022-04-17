@@ -13,4 +13,4 @@
 * React FontAwesome 
 * react-firebase-hooks
 * react-rating 
-* react-form 
+* react-hook-form 
