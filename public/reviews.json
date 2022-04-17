@@ -1,0 +1,56 @@
+[
+    {
+        "_id": "625b44045d3c1d9906b58c",
+        "index": 0,
+        "picture": "https://i.ibb.co/3B9H3sP/review-Nahid-s-Dad.jpg",
+        "rating": 390,
+        "name": "Maynul Islam",
+        "occupation": "Individual Farmer",
+        "comment": "Used this in our raised bed vegetable garden. All I can say is...WOW! We have so many vegetables we don’t know what to do with them, so we donated them to neighbors."
+    },
+    {
+        "_id": "625b4404f1bcfd1a97ca45",
+        "index": 1,
+        "picture": "https://i.ibb.co/2yPFNTW/review-Mama.jpg",
+        "rating": 270,
+        "name": "Shahidul Islam",
+        "occupation": "Retailer of ACI Crops Care",
+        "comment": "Good decisions start with good data. Good fertility and nutrient management data start with taking good samples. Book now before it get's too late!"
+    },
+    {
+        "_id": "625b4404196e6cdd116b3a",
+        "index": 3,
+        "picture": "https://i.ibb.co/7brBn2k/review-Tomato2.jpg",
+        "rating": 330,
+        "name": "Raju Ahmed",
+        "occupation": "Young Entrepreneur",
+        "comment": "Used this last year on four types of tomatoes, two types of peppers, cucumbers and basil. Absolutely loved it and already have some for this year."
+    },
+    {
+        "_id": "625b4404e26cdeaf434953",
+        "index": 5,
+        "picture": "https://i.ibb.co/WPTd78R/review-Tomato.jpg",
+        "rating": 250,
+        "name": "Kafil Uddin Pramanik",
+        "occupation": "Individual Farmer",
+        "comment": "Your service saved our tomato crop! He made our hopeless little garden a fun hobby again!"
+    },
+    {
+        "_id": "625b4404196e6cdd116bds",
+        "index": 3,
+        "picture": "https://i.ibb.co/MDgk9ZT/Review-Bhai.jpg",
+        "rating": 330,
+        "name": "Jalal Miah",
+        "occupation": "Labour",
+        "comment": "A plan that insures nutrients are used agronomically on the crops with minimal erosion, and insures nutrients are not lost from the farmstead."
+    },
+    {
+        "_id": "625b4404e26cdeaf4349yth",
+        "index": 5,
+        "picture": "https://i.ibb.co/WgwRpCg/review-Practical.jpg",
+        "rating": 250,
+        "name": "Thomas Shelby",
+        "occupation": "Influencer",
+        "comment": "I had some watermelons that I used this on after they had started to grow. They were growing rapidly prior to using this, but when I added this I noticed that they didn't get much bigger. They were barely the size of a grapefruit, the insides were mushy and fairly dry, and then they died soon after."
+    }
+]
