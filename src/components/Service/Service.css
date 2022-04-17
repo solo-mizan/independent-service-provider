@@ -1,0 +1,8 @@
+.service-card{
+    margin: 0 auto;
+    border: solid darkslategrey 2px;
+    border-radius: 10px;
+}
+.service-card img{
+    border-radius: 5px;
+}
