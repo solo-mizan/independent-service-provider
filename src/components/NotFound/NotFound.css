@@ -1,0 +1,9 @@
+.not-found-div{
+    margin: 0 auto;
+    text-align: center;
+    color: brown;
+    font-size: x-large;
+}
+.not-found-div img{
+    width: 100%;
+}
