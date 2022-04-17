@@ -1,0 +1,11 @@
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    
+    
+}

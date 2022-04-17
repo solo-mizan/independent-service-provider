@@ -1,38 +1,38 @@
 [
-    {
-      "_id": "625b44045d3c1d9906b58c85",
-      "index": 0,
-      "img": "http://placehold.it/32x32",
-      "price": 390,
-      "name": "June Rice",
-      "company": "NORSUP",
-      "email": "junerice@norsup.com"
-    },
-    {
-      "_id": "625b4404f1bcfd1a97ca450b",
-      "index": 1,
-      "img": "http://placehold.it/32x32",
-      "price": 270,
-      "name": "Castillo Knapp",
-      "company": "NURALI",
-      "email": "castilloknapp@nurali.com"
-    },
-    {
-      "_id": "625b4404196e6cdd116b3a48",
-      "index": 3,
-      "img": "http://placehold.it/32x32",
-      "price": 330,
-      "name": "Olga Allison",
-      "company": "ASSURITY",
-      "email": "olgaallison@assurity.com"
-    },
-    {
-      "_id": "625b4404e26cdeaf43495386",
-      "index": 5,
-      "img": "http://placehold.it/32x32",
-      "price": 250,
-      "name": "Dominique Decker",
-      "company": "SPEEDBOLT",
-      "email": "dominiquedecker@speedbolt.com"
-    }
-  ]
+  {
+    "_id": "625b44045d3c1d9906b58c85",
+    "index": 0,
+    "picture": "https://i.ibb.co/F4GPWBm/crop-Consulting.jpg",
+    "price": 390,
+    "name": "Crop consulting",
+    "company": "NORSUP",
+    "description": "Soil sample analysis and good maps are the foundation for building a strong crop plan, so these are the first components of the plan that we focus on."
+  },
+  {
+    "_id": "625b4404f1bcfd1a97ca450b",
+    "index": 1,
+    "picture": "https://i.ibb.co/fnSNqqQ/enviromental-Planning.jpg",
+    "price": 270,
+    "name": "Soil sampling",
+    "company": "NURALI",
+    "description": "Good decisions start with good data. Good fertility and nutrient management data start with taking good samples. Book now before it get's too late!"
+  },
+  {
+    "_id": "625b4404196e6cdd116b3a48",
+    "index": 3,
+    "picture": "https://i.ibb.co/f1MjDWt/precision-Ag.jpg",
+    "price": 330,
+    "name": "Enviromental planning",
+    "company": "ASSURITY",
+    "description": "A plan that insures nutrients are used agronomically on the crops with minimal erosion, and insures nutrients are not lost from the farmstead."
+  },
+  {
+    "_id": "625b4404e26cdeaf43495386",
+    "index": 5,
+    "picture": "https://i.ibb.co/BKNP2hJ/soil-Sampling.jpg",
+    "price": 250,
+    "name": "Precision agriculture",
+    "company": "SPEEDBOLT",
+    "description": "Precision agriculture is site specific crop management focused on managing field variability. Precision agriculture uses modern technology."
+  }
+]
