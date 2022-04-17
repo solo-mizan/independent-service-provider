@@ -3,7 +3,6 @@ import './Register.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
-import { signInWithEmailAndPassword } from 'firebase/auth';
 
 const Register = () => {
     const [email, setEmail] = useState('');
