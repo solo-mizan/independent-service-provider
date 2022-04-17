@@ -13,14 +13,17 @@ const Reviews = () => {
     }, []);
 
     return (
-        <div className='review-cards'>
-            {
-                reviews.map(review => <Review
-                key={review._id}
-                review={review}
-                ></Review>)
-            }
-        </div>
+        <>
+            <h1 className='text-center text-danger'>Customer's Feedback</h1>
+            <div className='review-cards'>
+                {
+                    reviews.map(review => <Review
+                        key={review._id}
+                        review={review}
+                    ></Review>)
+                }
+            </div>
+        </>
     );
 };
 

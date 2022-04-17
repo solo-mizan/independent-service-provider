@@ -21,11 +21,16 @@ const Review = ({ review }) => {
                 </Card.Body>
                 <ListGroup className="list-group-flush">
                     <ListGroupItem><span className='text-success'>Occupation:</span> {occupation}</ListGroupItem>
-                    <ListGroupItem><span className='text-success'>Rating:</span><ReactStars
-                        count={5}
-                        size={30}
-                        activeColor="#ffd700"
-                    /></ListGroupItem>
+                    <ListGroupItem className='mx-auto'><span className='text-success'>Rating:</span><ReactStars
+                            count={5}
+                            size={30}
+                            isHalf={true}
+                            emptyIcon={<i className="far fa-star"></i>}
+                            halfIcon={<i className="fa fa-star-half-alt"></i>}
+                            fullIcon={<i className="fa fa-star"></i>}
+                            activeColor="#ffd700"
+                        />
+                    </ListGroupItem>
                 </ListGroup>
             </Card>
         </div>

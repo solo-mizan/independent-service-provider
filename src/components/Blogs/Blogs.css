@@ -1,5 +1,8 @@
-.blogs-div{
-    text-align: center;
+.blogs-div {
     background-color: rgb(228, 228, 228);
-    padding: 20px;
+    padding: 40px;
+}
+
+.blogs-div h2 {
+    text-align: center;
 }
