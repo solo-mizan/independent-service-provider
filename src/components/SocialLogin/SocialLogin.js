@@ -30,7 +30,7 @@ const SocialLogin = () => {
                 <div style={{ height: "1px" }} className='w-50 bg-primary '></div>
             </div>
             <div className='d-flex'>
-                <button onClick={handleSignInWithGoogle} className='btn btn-info mx-auto'>Continue with Google <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon></button>
+                <button onClick={handleSignInWithGoogle} className='btn btn-success text-light mx-auto'>Continue with Google <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon></button>
             </div>
         </div>
     );

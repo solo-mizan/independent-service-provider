@@ -5,6 +5,9 @@ import './Login.css';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { sendPasswordResetEmail } from 'firebase/auth';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -21,6 +24,7 @@ const Login = () => {
     const handleEmailBlur = (event) => {
         setEmail(event.target.value);
     }
+
     const handlePasswordBlur = (event) => {
         setPassword(event.target.value);
     }
@@ -30,13 +34,17 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
     }
 
+const resetPassword = async () => {
+    await sendPasswordResetEmail(email);
+    toast('Email sent')
+}
     if (user) {
         navigate('/about');
     }
     return (
-        <div className='w-75 mx-auto border border-2 p-3 rounded-2'>
+        <div className='w-75 mx-auto border border-2 p-3 w-75 mx-auto rounded-2'>
             <h2 className='text-danger text-center mt-3'>Please Login</h2>
-            <Form onSubmit={handleUserSignIn} className='w-75 mx-auto'>
+            <Form onSubmit={handleUserSignIn}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control onBlur={handleEmailBlur} type="email" placeholder="Enter email" required />
@@ -52,10 +60,12 @@ const Login = () => {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <p className='text-danger'>{error?.message}</p>
                 </Form.Group>
-                <input className='btn btn-primary' type="submit" value="Login" />
-                <p>Don't have an Account? <span><Link className='text-decoration-none text-success' to={'/register'}>Register here</Link></span></p>
+                <p>Forgot your password? <span><button onClick={resetPassword} className='text-success btn btn-link'>Reset Password</button></span></p>
+                <input className='btn btn-primary mb-2 w-50 mx-auto d-block' type="submit" value="Login" />
+                <p>Don't have an Account? <span><Link className='text-success' to={'/register'}>Register here</Link></span></p>
             </Form>
             <SocialLogin></SocialLogin>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

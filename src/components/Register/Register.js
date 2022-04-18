@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword, useSendEmailVerification, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import Loading from '../Loading/Loading';
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -14,7 +15,7 @@ const Register = () => {
     const [sendEmailVerification, sending] = useSendEmailVerification(auth);
 
     const [
-        createUserWithEmailAndPassword, loading, user, error] = useCreateUserWithEmailAndPassword(auth);
+        createUserWithEmailAndPassword, loading, user, error] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
     const handleEmailBlur = (event) => {
         setEmail(event.target.value);
@@ -26,14 +27,16 @@ const Register = () => {
         event.preventDefault();
         createUserWithEmailAndPassword(email, password);
     }
-
+    if (loading) {
+        return <Loading></Loading>
+    }
     if (user) {
         navigate('/home');
     }
 
     return (
-        <div>
-            <form onSubmit={handleCreateUser} className='w-75 mx-auto border border-2 p-3 rounded-2'>
+        <div className='w-75 mx-auto border border-2 p-3 w-75 mx-auto rounded-2'>
+            <form onSubmit={handleCreateUser}>
                 <h3>Sign Up</h3>
                 <div className="form-group">
                     <label>First name</label>
@@ -66,7 +69,6 @@ const Register = () => {
                 </button>
             </form>
             <SocialLogin></SocialLogin>
-            );
         </div>
     );
 };
