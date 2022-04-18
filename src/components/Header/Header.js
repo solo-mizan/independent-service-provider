@@ -14,7 +14,7 @@ const Header = () => {
     }
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light" sticky='top'>
+        <Navbar collapseOnSelect className='navbar-div' expand="lg" sticky='top'>
             <Container>
                 <Navbar.Brand className='text-primary' as={Link} to={'/home'}>Agricultural Consult Services</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
