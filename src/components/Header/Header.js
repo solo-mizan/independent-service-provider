@@ -27,9 +27,9 @@ const Header = () => {
                         <Nav.Link eventKey="5" as={Link} to={'/about'}>About me</Nav.Link>
                         {
                             user ?
-                                <Button onClick={handleSignOut}>Sign out</Button>
+                                <Nav.Link className='btn btn-primary text-white' eventKey={"7"} onClick={handleSignOut}>Sign out</Nav.Link>
                                 :
-                                <Nav.Link eventKey="6" as={Link} to={'/login'}>Login</Nav.Link>
+                                <Nav.Link className='btn btn-primary text-white' eventKey="6" as={Link} to={'/login'}>Login</Nav.Link>
                         }
                     </Nav>
                 </Navbar.Collapse>
