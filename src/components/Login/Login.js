@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -54,6 +55,7 @@ const Login = () => {
                 <input className='btn btn-primary' type="submit" value="Login" />
                 <p>Don't have an Account? <span><Link className='text-decoration-none text-success' to={'/register'}>Register here</Link></span></p>
             </Form>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };

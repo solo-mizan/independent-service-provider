@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './Register.css';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -13,11 +14,7 @@ const Register = () => {
     const [sendEmailVerification, sending] = useSendEmailVerification(auth);
 
     const [
-        createUserWithEmailAndPassword,
-        user,
-        loading,
-        error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+        createUserWithEmailAndPassword, loading, user, error] = useCreateUserWithEmailAndPassword(auth);
 
     const handleEmailBlur = (event) => {
         setEmail(event.target.value);
@@ -68,6 +65,7 @@ const Register = () => {
                     Verify email
                 </button>
             </form>
+            <SocialLogin></SocialLogin>
             );
         </div>
     );
