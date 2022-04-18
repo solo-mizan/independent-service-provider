@@ -1,74 +1,85 @@
 import React from 'react';
-import SimpleReactFooter from "simple-react-footer";
 import './Footer.css';
+import {
+    MDBFooter,
+    MDBContainer,
+    MDBCol,
+    MDBRow,
+    MDBIcon
+} from 'mdb-react-ui-kit';
 
 const Footer = () => {
-    const description = "I have a consulting farming since 2008, and because—at the prices I charge—I think it’s imperative that prospective clients can get inside my head and see how I think before they engage me.";
-    const title = "Why choosing me!?";
-    const columns = [
-        {
-            title: "Resources",
-            resources: [
-                {
-                    name: "About",
-                    link: "/about"
-                },
-                {
-                    name: "Careers",
-                    link: "/careers"
-                },
-                {
-                    name: "Contact",
-                    link: "/contact"
-                },
-            ]
-        },
-        {
-            title: "Legal",
-            resources: [
-                {
-                    name: "Privacy",
-                    link: "/privacy"
-                },
-                {
-                    name: "Terms",
-                    link: "/terms"
-                }
-            ]
-        },
-        {
-            title: "Visit",
-            resources: [
-                {
-                    name: "Locations",
-                    link: "/locations"
-                },
-                {
-                    name: "Culture",
-                    link: "/culture"
-                }
-            ]
-        }
-    ];
     return (
-        <footer>
-            <SimpleReactFooter
-                description={description}
-                title={title}
-                columns={columns}
-                linkedin="fluffy_cat_on_linkedin"
-                facebook="solo.mizan"
-                twitter="fluffy_cat_on_twitter"
-                instagram="solo.mizan"
-                youtube="UCvetGttXmHJQtOZVvKMavQg"
-                pinterest="fluffy_cats_collections"
-                copyright="2022 - Agricultural Consult Service"
-                iconColor="black"
-                backgroundColor="bisque"
-                fontColor="black"
-                copyrightColor="darkgrey"
-            />
-        </footer>
+        <MDBFooter className='text-center text-white' style={{ backgroundColor: '#f1f1f1' }}>
+            <MDBContainer className='pt-4'>
+                <section className='mb-4'>
+                    <a
+                        className='btn btn-link btn-floating btn-lg text-dark m-1'
+                        href='https://facebook.com/solo-mizan.7/'
+                        target='_blank'
+                        rel='noreferrer'
+                        role='button'
+                        data-mdb-ripple-color='dark'
+                    >
+                        <MDBIcon fab className='fab fa-facebook-f' />
+                    </a>
+
+                    <a
+                        className='btn btn-link btn-floating btn-lg text-dark m-1 disabled'
+                        href='#!'
+                        role='button'
+                        data-mdb-ripple-color='dark'
+                    >
+                        <MDBIcon fab className='fa-twitter' />
+                    </a>
+
+                    <a
+                        className='btn btn-link btn-floating btn-lg text-dark m-1 disabled'
+                        href='#!'
+                        role='button'
+                        data-mdb-ripple-color='dark'
+                    >
+                        <MDBIcon fab className='fa-google' />
+                    </a>
+
+                    <a
+                        className='btn btn-link btn-floating btn-lg text-dark m-1 disabled'
+                        href='#!'
+                        role='button'
+                        data-mdb-ripple-color='dark'
+                    >
+                        <MDBIcon fab className='fa-instagram' />
+                    </a>
+
+                    <a
+                        className='btn btn-link btn-floating btn-lg text-dark m-1 disabled'
+                        href='#!'
+                        role='button'
+                        data-mdb-ripple-color='dark'
+                    >
+                        <MDBIcon fab className='fa-linkedin' />
+                    </a>
+
+                    <a
+                        className='btn btn-link btn-floating btn-lg text-dark m-1'
+                        href='https://github.com/solo-mizan/'
+                        target='_blank'
+                        rel='noreferrer'
+                        role='button'
+                        data-mdb-ripple-color='dark'
+                    >
+                        <MDBIcon fab className='fa-github' />
+                    </a>
+                </section>
+            </MDBContainer>
+
+            <div className='text-center text-dark p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+                © 2022<span> - </span>
+                <a className='text-dark' href='https://github.com/solo.mizan'>
+                    Agricultural Consult Services
+                </a>
+            </div>
+        </MDBFooter>
     );
 };
 

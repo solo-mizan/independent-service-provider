@@ -12,8 +12,6 @@ const Register = () => {
     const [err, setErr] = useState('');
     const navigate = useNavigate();
 
-    const [sendEmailVerification, sending] = useSendEmailVerification(auth);
-
     const [
         createUserWithEmailAndPassword, loading, user, error] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
@@ -59,14 +57,6 @@ const Register = () => {
                 <p className="forgot-password text-right">
                     Already registerd? <Link className='text-decoration-none text-success' to={'/login'}>Login here</Link>
                 </p>
-                <button
-                    onClick={async () => {
-                        await sendEmailVerification();
-                        alert('Email verification sent');
-                    }}
-                >
-                    Verify email
-                </button>
             </form>
             <SocialLogin></SocialLogin>
         </div>

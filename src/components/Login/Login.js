@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Button, Form } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { Form } from 'react-bootstrap';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Login.css';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
@@ -13,6 +13,8 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
 
     const [
         signInWithEmailAndPassword,
@@ -34,12 +36,13 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
     }
 
-const resetPassword = async () => {
-    await sendPasswordResetEmail(email);
-    toast('Email sent')
-}
+    const resetPassword = async (event) => {
+        const getEmail = (event.target.value);
+        await sendPasswordResetEmail(getEmail);
+        toast('Email sent')
+    }
     if (user) {
-        navigate('/about');
+        navigate(from, { replace: true });
     }
     return (
         <div className='w-75 mx-auto border border-2 p-3 w-75 mx-auto rounded-2'>
@@ -60,9 +63,9 @@ const resetPassword = async () => {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <p className='text-danger'>{error?.message}</p>
                 </Form.Group>
-                <p>Forgot your password? <span><button onClick={resetPassword} className='text-success btn btn-link'>Reset Password</button></span></p>
+                <p className='align-items-center d-flex'>Forgot your password?<button onClick={resetPassword} className='text-success btn btn-link'>Reset password here</button></p>
                 <input className='btn btn-primary mb-2 w-50 mx-auto d-block' type="submit" value="Login" />
-                <p>Don't have an Account? <span><Link className='text-success' to={'/register'}>Register here</Link></span></p>
+                <p>Don't have an Account? <Link className='text-success' to={'/register'}>Register here</Link></p>
             </Form>
             <SocialLogin></SocialLogin>
             <ToastContainer></ToastContainer>
