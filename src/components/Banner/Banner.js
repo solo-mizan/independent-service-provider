@@ -15,7 +15,7 @@ const Banner = () => {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3 className='text-black'>I'll tell you when to spray!</h3>
+      <h3 className='text-black'>I'll consult you when to spray!</h3>
       {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
     </Carousel.Caption>
   </Carousel.Item>
@@ -27,7 +27,7 @@ const Banner = () => {
     />
 
     <Carousel.Caption>
-      <h3>When to harvest</h3>
+      <h3>When to harvest!</h3>
       {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
     </Carousel.Caption>
   </Carousel.Item>
@@ -39,7 +39,7 @@ const Banner = () => {
     />
 
     <Carousel.Caption>
-      <h3>Smart farming</h3>
+      <h3>And whent to take care!</h3>
       {/* <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
     </Carousel.Caption>
   </Carousel.Item>

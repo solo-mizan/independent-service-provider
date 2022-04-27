@@ -16,23 +16,28 @@ const Blogs = () => {
                 <br />
                 I'm using firebase for:
                 <ul>
-                    <li>Authentication — for sign up, sign in.</li>
-                    <li>Hosting — to serve my web app for users globally.</li>
-                    <li>Cloud Firestore — real-time database with a user-friendly admin dashboard.</li>
-                    <li>Cloud Storage — suitable for storing media content like images, files.</li>
-                    <li>Cloud Functions — scalable solution to process data and virtually call any other actions.</li>
+                    <li>Firebase is easy to use.</li>
+                    <li>Firebase security is very strong.</li>
                 </ul>
+                <h3>In order to use firebase, we have to implement:</h3>
+                <ul>
+                    <li>Install firebase hooks to our react project</li>
+                    <li>Setting up firebase account.</li>
+                    <li>Create a new project on firebase website.</li>
+                </ul>
+
+
             </p>
             <br />
             <br />
             <h2 className='text-success'>What other services does firebase provide other than authentication.</h2>
             <p>Google firebase other services are: <ul>
-                    <li>Authentication — for sign up, sign in.</li>
-                    <li>Hosting — to serve my web app for users globally.</li>
-                    <li>Cloud Firestore — real-time database with a user-friendly admin dashboard.</li>
-                    <li>Cloud Storage — suitable for storing media content like images, files.</li>
-                    <li>Cloud Functions — scalable solution to process data and virtually call any other actions.</li>
-                </ul></p>
+                <li>Authentication — for sign up, sign in.</li>
+                <li>Hosting — to serve my web app for users globally.</li>
+                <li>Cloud Firestore — real-time database with a user-friendly admin dashboard.</li>
+                <li>Cloud Storage — suitable for storing media content like images, files.</li>
+                <li>Cloud Functions — scalable solution to process data and virtually call any other actions.</li>
+            </ul></p>
         </div>
     );
 };

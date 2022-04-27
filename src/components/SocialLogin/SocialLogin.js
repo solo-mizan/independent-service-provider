@@ -1,9 +1,6 @@
 import React from 'react';
 import './SocialLogin.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import { fab, faTwitterSquare, faFacebook, faLinkedin, faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
@@ -30,7 +27,7 @@ const SocialLogin = () => {
                 <div style={{ height: "1px" }} className='w-50 bg-primary '></div>
             </div>
             <div className='d-flex'>
-                <button onClick={handleSignInWithGoogle} className='btn btn-success text-light mx-auto'>Continue with Google <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon></button>
+                <button onClick={handleSignInWithGoogle} className='btn btn-danger text-light mx-auto'>Continue with Google <FontAwesomeIcon className='logo' icon={faGoogle}></FontAwesomeIcon></button>
             </div>
         </div>
     );

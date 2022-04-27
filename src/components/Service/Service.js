@@ -17,7 +17,7 @@ const Service = ({ service }) => {
                         {description}
                     </Card.Text>
                     <h3>Price: {price} taka</h3>
-                    <Button as={Link} to={'/checkout'}  variant="success">Book Now</Button>
+                    <Button as={Link} to={'/checkout'} className='w-50' variant="success">Book Now</Button>
                 </Card.Body>
             </Card>
         </div>

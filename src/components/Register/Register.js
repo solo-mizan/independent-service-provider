@@ -35,7 +35,7 @@ const Register = () => {
     return (
         <div className='w-75 mx-auto border border-2 p-3 w-75 mx-auto rounded-2'>
             <form onSubmit={handleCreateUser}>
-                <h3>Sign Up</h3>
+                <h2 className='text-primary text-center mt-2'>Register</h2>
                 <div className="form-group">
                     <label>First name</label>
                     <input type="text" className="form-control" placeholder="First name" />
@@ -53,9 +53,9 @@ const Register = () => {
                     <input onBlur={handlePasswordBlur} type="password" className="form-control" placeholder="Enter password" required />
                 </div>
                 <p className='text-danger'>{error?.message}</p>
-                <input className="btn btn-primary btn-block mt-2" type="submit" value="Register" />
+                <input className="btn btn-primary btn-block mt-2 mx-auto d-block w-50" type="submit" value="Register" />
                 <p className="forgot-password text-right">
-                    Already registerd? <Link className='text-decoration-none text-success' to={'/login'}>Login here</Link>
+                    Already registerd? <Link className='font-italic btn btn-link text-primary pe-auto text-decoration-none' to={'/login'}>Login here</Link>
                 </p>
             </form>
             <SocialLogin></SocialLogin>

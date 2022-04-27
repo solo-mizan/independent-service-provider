@@ -1,8 +1,17 @@
-.service-card{
-    margin: 0 auto;
+.service-card {
+    margin: 5px auto;
     border: solid darkslategrey 2px;
     border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.35s ease-in-out;
 }
-.service-card img{
+
+.service-card:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in;
+}
+
+.service-card img {
     border-radius: 5px;
 }

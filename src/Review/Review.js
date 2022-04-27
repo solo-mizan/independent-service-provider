@@ -2,17 +2,21 @@ import React from 'react';
 import ReactStars from "react-rating-stars-component";
 import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import './Review.css';
-import Rating from 'react-rating';
+import Loading from '../components/Loading/Loading';
 
 
 const Review = ({ review }) => {
 
-    const { name, picture, comment, rating, occupation } = review;
+    const { name, picture, comment, occupation } = review;
+
+    if(!picture) {
+        return <Loading></Loading>
+    }
 
     return (
         <div className='text-center review-card m-3 p-2 mx-auto'>
             <Card style={{ width: '18rem' }}>
-                <Card.Img className='rounded-circle border-2 border border-success' variant="top" src={picture} />
+                <Card.Img className='rounded-circle p-4' variant="top" src={picture} />
                 <Card.Body>
                     <Card.Title className='text-primary'>{name}</Card.Title>
                     <Card.Text>
@@ -28,7 +32,7 @@ const Review = ({ review }) => {
                             emptyIcon={<i className="far fa-star"></i>}
                             halfIcon={<i className="fa fa-star-half-alt"></i>}
                             fullIcon={<i className="fa fa-star"></i>}
-                            activeColor="#ffd700"
+                            activeColor="#ff0000"
                         />
                     </ListGroupItem>
                 </ListGroup>
