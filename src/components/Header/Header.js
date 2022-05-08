@@ -19,7 +19,7 @@ const Header = () => {
                 <Navbar.Brand className='text-primary' as={Link} to={'/home'}>Agricultural Consult Services</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="d-flex justify-content-around">
                         <Nav.Link eventKey="1" as={Link} to={'/home'}>Home</Nav.Link>
                         <Nav.Link eventKey="2" as={Link} to={'/services'}>Services</Nav.Link>
                         <Nav.Link eventKey="3" as={Link} to={'/reviews'}>Reviews</Nav.Link>
