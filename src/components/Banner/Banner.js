@@ -1,50 +1,33 @@
-import React from 'react';
-import { Carousel } from 'react-bootstrap';
-import './Banner.css';
-import banner1 from '../../image/banner/banner1.jpg'
-import banner2 from '../../image/banner/banner2.jpg'
-import banner3 from '../../image/banner/banner3.jpg'
-
+import React from "react";
+import { Carousel } from "react-bootstrap";
+import "./Banner.css";
 const Banner = () => {
-    return (
-        <Carousel className='mb-4'>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={banner1}
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3 className='text-black'>I'll consult you when to spray!</h3>
-      {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={banner2}
-      alt="Second slide"
-    />
+  return (
+    <Carousel className="mb-4">
+      <Carousel.Item>
+        <img className="d-block w-100" src="/l0.jpg" alt="First slide" />
+        <Carousel.Caption>
+          <h3 className="text-black">
+            I'll consult you when to take care of your skin
+          </h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-100" src="/l1.jpg" alt="Second slide" />
 
-    <Carousel.Caption>
-      <h3>When to harvest!</h3>
-      {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={banner3}
-      alt="Third slide"
-    />
+        <Carousel.Caption>
+          <h3 className="text-black">When to cut hair</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-100" src="/l2.jpg" alt="Third slide" />
 
-    <Carousel.Caption>
-      <h3>And whent to take care!</h3>
-      {/* <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
-    );
+        <Carousel.Caption>
+          <h3 className="text-black">And when to smoothen your skin</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  );
 };
 
 export default Banner;

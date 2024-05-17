@@ -1,45 +1,72 @@
-import React from 'react';
-import './Blogs.css';
+import React from "react";
+import "./Blogs.css";
 
 const Blogs = () => {
-    return (
-        <div className='blogs-div'>
-            <h2 className='text-success'>What is the difference between authorization and authentication?</h2>
-            <p>Authentication is the process of recognizing a user’s identity. It is the mechanism of associating an incoming request with a set of identifying credentials. The credentials provided are compared to those on a file in a database of the authorized user’s information on a local operating system or within an authentication server.
-                <br />
-                On the other hand, Authorization is a security mechanism to determine access levels or user/client privileges related to system resources including files, services, computer programs, data and application features. This is the process of granting or denying access to a network resource which allows the user access to various resources based on the user's identity.
-            </p>
-            <br />
-            <br />
-            <h2 className='text-success'> Why are you using firebase? What other options do you have to implement authentication?</h2>
-            <p>Firebase is a software development platform offered by Google. It helps to quickly build web applications without managing infrastructure. Before we discuss the pros and cons of using Firebase, let’s cover its best features.
-                <br />
-                I'm using firebase for:
-                <ul>
-                    <li>Firebase is easy to use.</li>
-                    <li>Firebase security is very strong.</li>
-                </ul>
-                <h3>In order to use firebase, we have to implement:</h3>
-                <ul>
-                    <li>Install firebase hooks to our react project</li>
-                    <li>Setting up firebase account.</li>
-                    <li>Create a new project on firebase website.</li>
-                </ul>
-
-
-            </p>
-            <br />
-            <br />
-            <h2 className='text-success'>What other services does firebase provide other than authentication.</h2>
-            <p>Google firebase other services are: <ul>
-                <li>Authentication — for sign up, sign in.</li>
-                <li>Hosting — to serve my web app for users globally.</li>
-                <li>Cloud Firestore — real-time database with a user-friendly admin dashboard.</li>
-                <li>Cloud Storage — suitable for storing media content like images, files.</li>
-                <li>Cloud Functions — scalable solution to process data and virtually call any other actions.</li>
-            </ul></p>
-        </div>
-    );
+  return (
+    <div className="blogs-div">
+      <h2 className="text-success">
+        {" "}
+        Unlock Your Skin's Potential: Personalized Skincare Solutions
+      </h2>
+      <p>
+        Ever feel overwhelmed by the countless skincare products on the market?
+        You're not alone! At <span>Mitu & Miki Skincare</span> , we believe in
+        personalized care. Our expert team will analyze your skin type,
+        concerns, and lifestyle to create a customized treatment plan that
+        targets your specific needs. In this blog post, we'll discuss the
+        benefits of personalized skincare and how it can help you achieve your
+        desired results. We'll also give you a sneak peek into the consultation
+        process at <span>Mitu & Miki Skincare</span> .
+        <br />
+        Stay tuned for our next post, where we'll delve into common skin
+        concerns and how our services can address them!
+      </p>
+      <br />
+      <br />
+      <h2 className="text-success">
+        {" "}
+        Conquer Common Skin Concerns: Solutions for Every Skin Type
+      </h2>
+      <p>
+        Dryness, acne, fine lines - no matter your skin concern, we have a
+        solution! At <span>Mitu & Miki Skincare</span>, we offer a variety of
+        services to address the most common skin issues. In this post, we'll
+        explore some of the most frequent concerns people face and the
+        treatments we recommend. Whether you're struggling with persistent acne
+        breakouts or want to prevent the signs of aging, we can help you achieve
+        a healthy, radiant complexion. Here's a glimpse of what we can offer:
+        Acne Treatment: We use proven methods to combat blemishes and promote
+        clear, healthy skin. Anti-Aging Solutions: From facials to targeted
+        therapies, we can help reduce wrinkles, fine lines, and improve overall
+        skin texture. Dry Skin Relief: We offer treatments and product
+        recommendations to deeply hydrate and nourish your skin. Stay tuned for
+        our final post, where we'll share tips for maintaining healthy skin at
+        home!
+      </p>
+      <br />
+      <br />
+      <h2 className="text-success">
+        Maintain Your Glow: Simple Skincare Tips for Everyday Life
+      </h2>
+      <p>
+        Taking care of your skin doesn't have to be complicated. At [Your
+        Business Name], we believe in empowering you with the knowledge to
+        maintain a healthy complexion between appointments. In this blog post,
+        we'll share some simple yet effective skincare tips you can incorporate
+        into your daily routine. From proper cleansing and moisturizing to sun
+        protection and healthy lifestyle choices, we'll equip you with the tools
+        you need to keep your skin looking its best. Here are a few sneak peeks
+        of the tips we'll cover: The Importance of Cleansing: Learn how to
+        properly cleanse your face for optimal results. Moisturize, Moisturize,
+        Moisturize!: Discover the importance of hydration and how to choose the
+        right moisturizer for your skin type. Sun Protection is Key: We'll
+        discuss the damaging effects of UV rays and the importance of daily
+        sunscreen use. By following these simple tips, you can maintain the
+        results of your professional treatments and achieve a healthy, radiant
+        complexion!
+      </p>
+    </div>
+  );
 };
 
 export default Blogs;

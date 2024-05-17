@@ -2,55 +2,55 @@
     {
         "_id": "625b44045d3c1d9906b58c",
         "index": 0,
-        "picture": "https://i.ibb.co/3B9H3sP/review-Nahid-s-Dad.jpg",
+        "picture": "/tamim.jpg",
         "rating": 390,
-        "name": "Maynul Islam",
-        "occupation": "Individual Farmer",
-        "comment": "Used this in our raised bed vegetable garden. All I can say is...WOW! We have so many vegetables we don’t know what to do with them, so we donated them to neighbors."
+        "name": "Tamim Khan",
+        "occupation": "Software Engineer",
+        "comment": "This skincare service is amazing! My skin feels so healthy and radiant after using it. I highly recommend it!"
     },
     {
         "_id": "625b4404f1bcfd1a97ca45",
         "index": 1,
-        "picture": "https://i.ibb.co/2yPFNTW/review-Mama.jpg",
+        "picture": "/nabila.jpg",
         "rating": 270,
-        "name": "Shahidul Islam",
-        "occupation": "Retailer of ACI Crops Care",
-        "comment": "Good decisions start with good data. Good fertility and nutrient management data start with taking good samples. Book now before it get's too late!"
+        "name": "Nabila",
+        "occupation": "Lawyer",
+        "comment": "This skincare service helped me achieve a glowing complexion. I'm so happy with the results!"
     },
     {
         "_id": "625b4404196e6cdd116b3a",
         "index": 3,
-        "picture": "https://i.ibb.co/7brBn2k/review-Tomato2.jpg",
+        "picture": "/niloy.jpg",
         "rating": 330,
-        "name": "Raju Ahmed",
-        "occupation": "Worker",
-        "comment": "Used this last year on four types of tomatoes, two types of peppers, cucumbers and basil. Absolutely loved it and already have some for this year."
+        "name": "Niloy Ahmed",
+        "occupation": "Content creator",
+        "comment": "This service is a game-changer for my skin! It's so gentle and effective, and I've noticed a significant improvement in my skin tone and texture."
     },
     {
         "_id": "625b4404e26cdeaf434953",
         "index": 5,
-        "picture": "https://i.ibb.co/WPTd78R/review-Tomato.jpg",
+        "picture": "/ritu.jpg",
         "rating": 250,
-        "name": "Kafil Uddin Pramanik",
-        "occupation": "Individual Farmer",
-        "comment": "Your service saved our tomato crop! He made our hopeless little garden a fun hobby again!"
+        "name": "Ritu Sarkar",
+        "occupation": "Doctor",
+        "comment": "This skincare service is a lifesaver! It's helped me achieve the healthy, youthful skin I've always dreamed of. Thank you!"
     },
     {
         "_id": "625b4404196e6cdd116bds",
         "index": 3,
-        "picture": "https://i.ibb.co/k3qWXVH/Review-Bhai.jpg",
+        "picture": "/mizan.jpg",
         "rating": 330,
-        "name": "Jalal Miah",
+        "name": "Muhammad Mizan",
         "occupation": "Matchmaker",
-        "comment": "A plan that insures nutrients are used agronomically on the crops with minimal erosion, and insures nutrients are not lost from the farmstead."
+        "comment": "This skincare service is like magic! My skin feels smoother and more hydrated than ever before. I can't recommend it enough!"
     },
     {
         "_id": "625b4404e26cdeaf4349yth",
         "index": 5,
-        "picture": "https://i.ibb.co/WgwRpCg/review-Practical.jpg",
+        "picture": "/chaity.jpg",
         "rating": 250,
-        "name": "Thomas Shelby",
-        "occupation": "Young Entrepreneur",
-        "comment": "I had some watermelons that I used this on after they had started to grow. They were growing rapidly prior to using this, but when I added this I noticed that they didn't get much bigger."
+        "name": "Chaity Sarkar",
+        "occupation": "Teacher",
+        "comment": "I wasn't sure about this skincare service at first, but I'm so glad I gave it a try! My skin looks and feels amazing. Definitely a five-star experience!"
     }
 ]

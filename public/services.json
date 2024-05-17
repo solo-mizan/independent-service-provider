@@ -2,37 +2,37 @@
   {
     "_id": "625b44045d3c1d9906b58c85",
     "index": 0,
-    "picture": "https://i.ibb.co/F4GPWBm/crop-Consulting.jpg",
-    "price": 390,
-    "name": "Crop consulting",
+    "picture": "/111.jpg",
+    "price": 3990,
+    "name": "Deep Cleansing Facial",
     "company": "NORSUP",
-    "description": "Soil sample analysis and good maps are the foundation for building a strong crop plan, so these are the first components of the plan that we focus on."
+    "description": "This invigorating facial treatment thoroughly removes dirt, oil, and impurities, leaving your skin feeling refreshed and renewed. Perfect for clogged pores, dull complexions, and those seeking a revitalizing boost."
   },
   {
     "_id": "625b4404f1bcfd1a97ca450b",
     "index": 1,
-    "picture": "https://i.ibb.co/fnSNqqQ/enviromental-Planning.jpg",
-    "price": 270,
-    "name": "Soil sampling",
+    "picture": "/222.jpg",
+    "price": 2700,
+    "name": "Microdermabrasion Treatment",
     "company": "NURALI",
-    "description": "Good decisions start with good data. Good fertility and nutrient management data start with taking good samples. Book now before it get's too late!"
+    "description": "This exfoliating treatment gently buffs away dead skin cells, promoting smoother texture, brighter tone, and minimizing the appearance of fine lines and wrinkles. Ideal for uneven skin tone, sun damage, and those wanting a youthful glow."
   },
   {
     "_id": "625b4404196e6cdd116b3a48",
     "index": 3,
-    "picture": "https://i.ibb.co/f1MjDWt/precision-Ag.jpg",
-    "price": 330,
-    "name": "Enviromental planning",
+    "picture": "/333.jpg",
+    "price": 3300,
+    "name": "Customized Mask Therapy",
     "company": "ASSURITY",
-    "description": "A plan that insures nutrients are used agronomically on the crops with minimal erosion, and insures nutrients are not lost from the farmstead."
+    "description": "Our estheticians curate a personalized mask treatment based on your specific skin concerns. Whether it's hydration, calming inflammation, or targeting acne, this targeted approach delivers potent ingredients for noticeable results. Great for all skin types with specific needs."
   },
   {
     "_id": "625b4404e26cdeaf43495386",
     "index": 5,
-    "picture": "https://i.ibb.co/BKNP2hJ/soil-Sampling.jpg",
-    "price": 250,
-    "name": "Precision agriculture",
+    "picture": "/444.jpg",
+    "price": 2500,
+    "name": "Hydrafacial Treatment",
     "company": "SPEEDBOLT",
-    "description": "Precision agriculture is site specific crop management focused on managing field variability. Precision agriculture uses modern technology."
+    "description": "This advanced facial combines cleansing, exfoliation, extraction, hydration, and antioxidant infusion all in one. This luxurious treatment leaves your skin deeply cleansed, plump, and glowing, perfect for those seeking a complete revitalizing experience."
   }
 ]
